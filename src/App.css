@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+  font-size: 60.5%;
+}
+.todo-container
+{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 1%;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(16,9,121,0.9752275910364145) 3%, rgba(0,255,231,0.8379726890756303) 53%);
+    color:rgb(15, 15, 15);
+    transition: 0.3s linear;
+    overflow: hidden;
+}
+header,
+form,
+.date-time{
+    margin: 0 1rem;
+    min-height: 10vh;
+    width: 100%;
+
+}
+header{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1rem;
+    min-height: 25vh;
+    width: 100%;
+}
+section h1{
+    color: #080808;
+    font-size: 4rem;
+    text-align: center;
+}
+.date-time{
+    font-size: 3rem;
+    text-align: center;
+}
+form{
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    margin: 1px 0;
+    padding: 0.8rem;
+    width: 100%;
+}
+form input{
+    padding: 2px;
+    font-size: 3.1rem;
+    letter-spacing: 0.1rem;
+    border: none;
+    outline: none;
+    transition: background-color 200ms ease-in-out;
+    width: 100%;
+    background-color: #f2f3f4;
+}
+form input:hover{
+    cursor: text;
+}
+button
+{
+    border: none;
+    outline: none;
+    transition: box-shadow 200ms ease, background-color 200ms ease-in-out;
+  background-color: #2c3e50;
+  color: rgb(0, 0, 0);
+}
+form button:hover {
+    cursor: pointer;
+    background-color: #a7a6ec;
+  }
+  form button {
+    padding: 8.5px;
+    font-size: 19px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    min-width: 100px;
+    background-color: #1098e2;
+    /* color: var(--secondary-color); */
+  }
+  span {
+    margin-right: 3.2rem;
+  }
+  .myUnOrdList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+  }
+  .todo-list {
+    min-width: 25%;
+  
+    /* To remove the bullets of unordered list */
+    list-style: none;
+  }
+  .todo-item {
+    margin: 1.4rem;
+    font-size: 18px;
+    color: #1c2833;
+    border-radius: 30px;
+    transition: background-color 200ms ease-in-out;
+    background-color: #f2f3f4;
+    min-width: 25rem;
+    max-width: 40rem;
+    padding: 0.8rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 0.3fr 0.3fr;
+    justify-content: start;
+    gap: 1.5rem;
+    overflow-wrap: anywhere;
+  }
+  li span {
+    max-width: 20rem;
+    color: #03090f;
+  }
+  .check-btn,
+.delete-btn {
+  font-size: 2rem;
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.2rem;
+  margin: 0 2px;
+  border-radius: 80%;
+  background-color: #299fe4;
+  color: rgb(2, 19, 26);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.check-btn {
+    color: #fff;
+    background-color: #2ecc71;
+  }
+  .delete-btn {
+    color: #fff;
+    background-color: #e74c3c;
+  }
+  .clear-btn {
+    background-color: #e74c3c;
+    font-size: 1.6rem;
+    padding: 1rem 2.2rem;
+    border-radius: 0.3rem;
+
+  }
+
+  
+
+.checkList{
+    text-decoration: line-through;
+}
+.notcheckList{
+    text-decoration: none;
+}
