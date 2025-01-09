@@ -1,5 +1,6 @@
 # TaskManger
-HOW TO SETUP
+# HOW TO SETUP
+
 Step 1: Download the Zip file
 
 Step 2: cd TaskManger
